@@ -46,7 +46,7 @@ class FM(tf.keras.Model):
             1,
             keepdims=False
         )
-        
+
         y_hat = tf.math.sigmoid(self.w_0 + linear_terms + interactions)
 
         return y_hat
